@@ -8,6 +8,8 @@
 @import 'blocks/preview'
 @import 'blocks/promo'
 @import 'blocks/features'
+@import 'blocks/tradition'
+@import 'blocks/country'
 @import 'blocks/footer'
 
 body 
@@ -85,6 +87,8 @@ a
     line-height: 100%
     &_wide
         max-width: 688px
+    &_bright
+        color: $bright-color
     @include sm
         font-size: 80px
     @include xxs
@@ -93,6 +97,10 @@ a
 .main-text
     font-size: 18px
     line-height: 160%
+    &_wide
+        max-width: 380px
+    &_dark
+        color: $dark-color
     &_mb
         &:not(:last-child)
             margin-bottom: 25px

@@ -1,0 +1,38 @@
+.tradition
+    padding-bottom: 342px
+    background: $main-color
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+    &__left
+        margin-right: 132px
+        position: relative
+        padding-left: calc((100% - 1200px) / 2)
+        display: flex
+        flex-direction: column
+        @include md
+            padding-left: 20px
+        @include xxs
+            padding-left: 15px
+    &__left-content
+        width: 688px
+    &__right
+        @media(min-width: 1920px)
+            margin-right: calc((100% - 1900px) / 2)
+    &__text
+        margin-left: auto
+    &__bottom
+        @media(min-width: 1920px)
+            width: 80%
+            height: 640px
+        position: absolute
+        width: 100%
+        height: 540px
+        right: 0
+        bottom: -120px
+        transform: translateY(100%)
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
